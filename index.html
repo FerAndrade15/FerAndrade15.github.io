@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechatronics Engineer Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    body { padding-top: 70px; }
+    .hero-img {
+      width: 160px; height: 160px; object-fit: cover;
+      border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .section-title { font-weight: 600; margin-top: 60px; margin-bottom: 25px; }
+    .project-card { transition: transform .12s ease; cursor: pointer; }
+    .project-card:hover { transform: translateY(-5px); }
+  </style>
+</head>
+
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects/index.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="private/login.html">Private Area</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="container text-center" style="padding-top:110px;">
+    <img src="assets/img/profile.jpg" alt="Profile photo" class="hero-img mb-3" />
+    <h1 class="fw-bold">Fernanda Andrade</h1>
+    <p class="text-muted">
+      Mechatronics Engineer – Bridging mechanics, electronics, and automation to design intelligent systems.
+    </p>
+
+    <div class="mt-3">
+      <a href="projects/index.html" class="btn btn-outline-primary m-2">Explore Projects</a>
+      <a href="private/login.html" class="btn btn-outline-secondary m-2">Access Calculators (Private)</a>
+    </div>
+  </section>
+
+  <!-- Focus Areas -->
+  <section class="container text-center">
+    <h2 class="section-title">Focus Areas</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Control & Automation</h5>
+            <p class="text-muted small mb-0">
+              PLCs, feedback systems, sensors, industrial communication.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical Design</h5>
+            <p class="text-muted small mb-0">
+              CAD modeling, kinematics, mechanisms, FEA simulations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Electronics & Embedded Systems</h5>
+            <p class="text-muted small mb-0">
+              Microcontrollers, circuit design, data acquisition, mechatronic integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Featured Projects -->
+<section class="container">
+  <h2 class="section-title text-center">Featured Projects</h2>
+
+  <!-- Grid where projects will appear -->
+  <div id="featuredProjects" class="row g-3 justify-content-center">
+    <!-- Default placeholder cards -->
+    <div class="col-md-4">
+      <div class="card project-card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">Mechanism Design & Simulation</h5>
+          <p class="text-muted small">
+            Dynamic modeling of a four-bar mechanism using Python and NumPy for kinematic analysis.
+          </p>
+          <a href="projects/index.html#mechanisms" class="btn btn-sm btn-outline-primary">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card project-card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">Embedded Control System</h5>
+          <p class="text-muted small">
+            PID implementation for DC motor speed control on an Arduino-based platform.
+          </p>
+          <a href="projects/index.html#embedded" class="btn btn-sm btn-outline-primary">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card project-card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">Automated Sorting Mechanism</h5>
+          <p class="text-muted small">
+            Integration of sensors, actuators, and PLC logic to build a small-scale automation system.
+          </p>
+          <a href="projects/index.html#automation" class="btn btn-sm btn-outline-primary">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="projects/index.html" class="btn btn-primary">View All Projects</a>
+  </div>
+</section>
+
+  <!-- Private Tools -->
+  <section class="container text-center">
+    <h2 class="section-title">Private Tools & Calculators</h2>
+    <p class="text-muted small">
+      Restricted access calculators and design references for daily engineering work.<br>
+      Available to authorized users only.
+    </p>
+    <a href="private/login.html" class="btn btn-outline-secondary">Log in to Access</a>
+  </section>
+
+  <!-- Contact / Links -->
+  <section class="container text-center">
+    <h2 class="section-title">Connect</h2>
+    <p class="text-muted">
+      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="me-3 text-decoration-none">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/YOUR_GITHUB" target="_blank" class="text-decoration-none">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+      <br>
+      <small>Private contact available upon request.</small>
+    </p>
+  </section>
+
+  <footer class="text-center text-muted small mt-5 mb-3">
+    © 2025 Maria Andrade – Engineering Portfolio
+  </footer>
+
+  <!-- Bootstrap Icons & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Featured Projects Loader -->
+  <script>
+    async function loadFeatured() {
+      try {
+        const resp = await fetch("projects/data/projects.json");
+        const all = await resp.json();
+        const featured = all.slice(0, 3);
+        const grid = document.getElementById("featuredProjects");
+        grid.innerHTML = featured.map(p => `
+          <div class="col-md-4">
+            <div class="card project-card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">${p.title}</h5>
+                <p class="text-muted small">${p.summary}</p>
+                <a href="projects/index.html#${p.id}" class="btn btn-sm btn-outline-primary">View</a>
+              </div>
+            </div>
+          </div>`).join("");
+      } catch (e) {
+        console.error("Failed to load featured projects", e);
+      }
+    }
+    loadFeatured();
+  </script>
+</body>
+</html>

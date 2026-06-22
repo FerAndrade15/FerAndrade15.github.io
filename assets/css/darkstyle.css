@@ -1,0 +1,162 @@
+:root {
+  --primary: #2a9d8f;       /* navbar & buttons green */
+  --secondary: #1b353f;     /* headings */
+  --accent: #f4d35e;        /* yellow accent */
+  --bg-main: #0d0d0d;       /* page background */
+  --bg-card: #1a1a1a;       /* cards, panels, tool areas */
+  --text-main: #f5f5f5;     /* main text */
+  --text-muted: #b0b0b0;    /* muted text */
+  --border: #333333;        /* borders, dividers */
+  --shadow-light: rgba(0,0,0,0.6);
+  --shadow-dark: rgba(0,0,0,0.9);
+}
+
+/* Full page background and base text */
+html, body {
+  background-color: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Containers, sections, rows */
+section, main, .container, .container-fluid, .row, .wrapper, header, footer, .bg-light {
+  background-color: var(--bg-main) !important;
+  color: var(--text-main) !important;
+}
+
+/* Navbar fully green, no shadow */
+.navbar,
+.navbar .container,
+.navbar .container-fluid,
+.navbar .navbar-collapse,
+.navbar.bg-light,
+.navbar.bg-white {
+  background-color: var(--primary) !important;
+  box-shadow: none !important;
+}
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+.navbar-brand:hover {
+  color: var(--accent) !important;
+}
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+.navbar .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* Hero Image */
+.hero-img {
+  background-color: var(--bg-card) !important;
+  color: var(--text-main);
+  box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+/* Cards, Projects, Tool area */
+.project-card, .card, #toolArea {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border);
+  color: var(--text-main) !important;
+  border-radius: 12px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.project-card:hover, .card:hover, #toolArea:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px var(--shadow-dark);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff !important;
+}
+.btn-primary:hover {
+  background-color: #23877f; 
+  border-color: #23877f;
+}
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: #fff !important;
+}
+.btn-outline-secondary {
+  color: var(--text-main);
+  border-color: var(--border);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--border);
+  color: var(--text-main) !important;
+  border-color: var(--border);
+}
+
+/* Text */
+.text-muted,
+p.text-muted,
+small {
+  color: var(--text-muted) !important;
+}
+h1, h2, h3, h4, h5, h6, section h1, section h2 {
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+/* Dividers */
+hr {
+  border-color: var(--border);
+}
+
+/* Forms */
+input,
+textarea,
+select {
+  background-color: var(--bg-card) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border) !important;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* Tables */
+table, table th, table td {
+  background-color: var(--bg-card) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Links */
+a {
+  color: var(--accent) !important;
+}
+a:hover {
+  color: #fff176 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 10px;
+}
+
+/* Shadows for cards and sections (not navbar) */
+section, .hero-img, .card, .project-card {
+  box-shadow: 0 4px 12px var(--shadow-light);
+}
